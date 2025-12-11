@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas | Ingressos </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="entretenimento.css">
+</head>
+
+<body>
+  <header>&nbsp;</header>
+  <div class="form-container">
+    <h2>Faça sua reserva</h2>
+    <br>
+
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone/Celular</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+      <br>
+
+      <h2>Escolha da sessão</h2>
+      <br>
+
+      <div class="form-group">
+        <label for="horario">Data:</label>
+        <select id="data" name="data" required>
+          <option value="">Selecione...</option>
+          <option value="15h">05/11/2026</option>
+          <option value="18h">06/11/2026</option>
+          <option value="21h">07/11/2026</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="horario">Horário:</label>
+        <select id="horario" name="horario" required>
+          <option value="">Selecione...</option>
+          <option value="15h">15h</option>
+          <option value="18h">18h</option>
+          <option value="21h">21h</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantidade">Quantidade de ingressos:</label>
+        <select id="quantidade" name="quantidade" required>
+          <option value="">Selecione...</option>
+          <option value="1">1 ingresso</option>
+          <option value="2">2 ingressos</option>
+          <option value="3">3 ingressos</option>
+          <option value="4">4 ingressos</option>
+        </select>
+      </div>
+      <br> <br>
+
+      <div class="form-group-full">
+        <button type="submit">Enviar Inscrição</button>
+      </div>
+    </form>
+  </div>
+  <br>
+</body>
+</html>

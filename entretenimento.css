@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, darkslateblue, darkorange); 
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+}
+.divisao {
+  background-color: rgba(255, 255, 255, 0.4);
+    font-weight: lighter;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width:90%;
+    display: grid;
+    margin:20px;
+    gap: 50px;
+    box-shadow: 15px 50px 20px   rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.divisao h2 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 12px;
+}
+.divisao:hover {
+    transform: scale(1.01)
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    margin: 5px;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: black;
+}
+.filme {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    width:100%;
+    box-shadow: 15px 30px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.filme:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+    transform: scale(1.02)
+}
+.filme img {
+    width: 100px;
+}
+a {
+    background-color:rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius:5px;
+    padding: 10px;
+    float: right;
+    transition: transform 0.3s ease;
+}
+img {
+    width: 200px;
+    border-radius: 10px;
+    float: left;
+    transition: transform 0.3s ease; 
+    margin: 20px;
+}
+a:hover {
+    background-color:rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+img:hover {
+    transform: scale(1.08);
+}
+p {
+   font-size:18px; 
+   margin: 15px;
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 45px;
+  width: 600px; 
+  border-radius: 14px;
+  border: 1px solid black;
+  box-shadow: 15px 30px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+.form-container:hover {
+    transform: scale(1.03);
+}
+
+label {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #111827;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #111827; 
+  outline: none;
+}
+
+.form-group,
+.form-group-full {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: #000000;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+.cronograma-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; 
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  justify-items: center;
+  box-shadow: 0 8px 20px rgba(10, 9, 14, 0.15);
+}
+
+.dia-card {
+  background: #fffbfb;
+  border-radius: 2px;
+  border:2px solid #000000;
+  box-shadow: 0 8px 20px rgba(10, 9, 14, 0.15);
+  padding: 25px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dia-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(10, 9, 12, 0.25);
+}
+
+.dia-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #04040c;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.dia-card p {
+  color: #140418;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.dia-content ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}

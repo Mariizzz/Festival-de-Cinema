@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barra de navegação</title>
+</head>
+<style>
+    
+#navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #ffffff66; 
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+
+#navbar ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#navbar li {
+    margin: 0 15px; 
+}
+
+
+#navbar a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
+}
+
+
+#navbar a:hover {
+    background-color: #555; 
+    border-radius: 5px; 
+}
+
+
+body {
+    margin-top: 60px; 
+    background-color: #333;
+}
+
+</style>
+<body>
+<nav id="navbar">
+    <ul>
+        <li><a href="inicio.html" target="inicio">Início</a></li>
+        <li><a href="destaques.html" target="inicio">destaques</a></li>
+        <li><a href="ingressos.html" target="inicio">ingressos</a></li>
+        <li><a href="avaliação.html" target="inicio">avaliação</a></li>
+        <li><a href="cronograma.html" target="inicio">cronograma</a></li>
+        <li><a href="reserva.html" target="inicio">reservas</a></li>
+        <li><a href="criticas.html" target="inicio">criticas</a></li>
+    </ul>
+</nav>
+</body>
+</html>

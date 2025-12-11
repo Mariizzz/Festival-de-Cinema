@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação do Filme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="entretenimento.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Avalie o filme que você assistiu</h2>
+    <br>
+
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome de usuário</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="filme">Filme assistido</label>
+        <select id="filme" name="filme" class="custom-select" required>
+          <option value="">Selecione...</option>
+          <option value="romance">Como Eu Era Antes de Você</option>
+          <option value="romance">Crepúsculo</option>
+          <option value="terror">Invocação do Mal</option>
+          <option valu="animacao">Coraline</option>
+          <option value="acao">Rota de Fuga</option>
+          <option value="acao">Batman: O Cavaleiro das Trevas</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nota">Nota do filme</label>
+        <select id="nota" name="nota" class="custom-select" required>
+          <option value="">Selecione...</option>
+          <option value="1">★☆☆☆☆ 1</option>
+          <option value="2">★★☆☆☆ 2</option>
+          <option value="3">★★★☆☆ 3</option>
+          <option value="4">★★★★☆ 4</option>
+          <option value="5">★★★★★ 5</option>
+        </select>
+      </div>
+
+      <textarea id="comentarios" name="comentarios" required placeholder="Deixe sua crítica sobre o filme"></textarea>
+
+      <br><br>
+      <button type="submit">Enviar Resenha</button>
+
+  </div>
+</body>
+</html>

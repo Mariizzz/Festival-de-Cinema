@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="entretenimento.css">
+</head>
+    <style>
+
+        /* Container do carrossel */
+        .carousel {
+            width: 80%;
+            height: 500px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            background:  #ffffff66;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Wrapper dos slides */
+        .slides {
+            display: flex;
+            width: 400%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Cada slide */
+        .slide {
+            width: 25%;
+            flex-shrink: 0;
+            height: 90%;
+        }
+
+        .slide img {
+            width: 65%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 90%;
+        }
+
+        /* Controles */
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input[type="radio"]:checked + label {
+            background: white;
+        }
+
+        /* Animação automática */
+        .slides {
+            animation: slide 20s infinite;
+        }
+
+        @keyframes slide {
+            0%, 25% { transform: translateX(0); }
+            25%, 50% { transform: translateX(-25%); }
+            50%, 75% { transform: translateX(-50%); }
+            75%, 100% { transform: translateX(-75%); }
+        }
+
+        /* Pausar animação ao interagir */
+        input[type="radio"]:checked ~ .slides {
+            animation: none;
+        }
+
+        /* Posições manuais */
+        #slide1:checked ~ .slides { transform: translateX(0); }
+        #slide2:checked ~ .slides { transform: translateX(-25%); }
+        #slide3:checked ~ .slides { transform: translateX(-50%); }
+        #slide4:checked ~ .slides { transform: translateX(-75%); }
+    </style>
+</head>
+<body>
+    <h1>Festival de filmes</h1>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+        <!-- Controles -->
+        <div class="controls">
+            <input type="radio" id="slide1" name="slider" checked>
+            <label for="slide1"></label>
+            <input type="radio" id="slide2" name="slider">
+            <label for="slide2"></label>
+            <input type="radio" id="slide3" name="slider">
+            <label for="slide3"></label>
+            <input type="radio" id="slide4" name="slider">
+            <label for="slide4"></label>
+        </div>
+
+        <!-- Slides -->
+        <div class="slides">
+            <div class="slide"><img src="imagem/carrossel/introducao.png" alt="Slide 1"></div>
+            <div class="slide"><img src="imagem/carrossel/filmes1.png" alt="Slide 2"></div>
+            <div class="slide"><img src="imagem/carrossel/filmes2.png" alt="Slide 3"></div>
+            <div class="slide"><img src="imagem/carrossel/patrocinio.png" alt="Slide 4"></div>
+        </div>
+    </div>
+</body>
+</html>
